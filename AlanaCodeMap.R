@@ -58,6 +58,6 @@ for (i in 1:length(sites$Study)) {
 
 finalplot <- initialplot +
   scale_shape_manual(name="Legend",values = shapevector, labels=labelnames) +
-  scale_fill_manual(name="Legend",values = cbbPalette, labels=labelnames)
+  scale_fill_manual(name="Legend",values = cbbPalette, labels=labelnames)+theme(legend.position="bottom")
 
 finalplot
